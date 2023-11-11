@@ -1,0 +1,6 @@
+your result for add is 3
+your result for sub is -1
+your result for mult is 73.8
+your result for add_thensq is 3
+your result for sub is -1
+your result for mult is 73.8

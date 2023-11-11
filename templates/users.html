@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+    a:link, a:visited {
+      background-color: #f436ab;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    a:hover, a:active {
+      background-color: rgb(255, 0, 255);
+    }
+    </style>
+<p>users</p>
+<table>
+    <tr>
+        <th> Username </th>
+        <th> User ID </th>
+    </tr>
+
+{% for item in users %}
+<tr><td>{{ item }}</td><td><a href="{{url_for('update', uid=item.user_id )}}">{{ item.user_id }}</a></td></tr>
+{% endfor %}
+</table>
+{% endblock %}

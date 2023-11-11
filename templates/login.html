@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<form method = "POST">
+    <label for="username">Username: </label>
+    <input type id="username" name="username"><br /><br />
+    <label for="password">Password: </label>
+    <input type id="password" name="password"><br /><br />
+    <input type="submit" value="Submit">
+</form>
+{% if is_authenticated %}
+    <p>Hello {{username}} </p>
+{% endif %}
+{% endblock %}

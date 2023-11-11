@@ -1,0 +1,51 @@
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #bb1111;
+  }
+  
+  /* li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  } */
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #745a9f;
+  }
+
+  body {
+    background: #ff00ff;
+    background: -webkit-linear-gradient(to left, #ffffff, #000000);
+    background: linear-gradient(to left, #ff0015, #0080ff);
+    min-height: 100vh;
+  }
+  
+
+
+  #button-addon1 {
+    color: #204497;
+  }
+  
+  i {
+    color: #901473;
+  }
+  
+  .form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .form-control.shadow-0:focus {
+    box-shadow: none;
+  }

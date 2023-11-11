@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        a:link, a:visited {
+          background-color: #f436ab;
+          color: white;
+          padding: 14px 25px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+        }
+        
+        a:hover, a:active {
+          background-color: rgb(255, 0, 255);
+        }
+        </style>
+    <head>
+    <link rel="stylesheet" href="/static/css/main.css">
+    </head>
+    <nav>
+        <a href="{{ url_for('hello_world') }}">Home</a>
+        <a href="{{ url_for('login') }}">Login</a>
+        <a href="https://youtube.com/">YouTube</a>
+        <a href="{{ url_for('users')}}"> Users </a>
+    </nav>
+    <h1 style="color:rgb(0, 38, 255);">  Balls</h1>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        <ul class=flashes>
+        {% for category, message in messages %}
+        <p class="{{ category }}">ALERT: {{ message }}</p>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {% endwith %}
+    <!-- use css, use bootstrap or whatever formatting you use -->
+    {% block content %}
+    {% endblock %}
+    <h2>A FOOTER - copyright, company, about us, contact, blah blah blah</h2>
+</html>

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<header>groceries</header>
+<nav>
+{% for item in groceries %}
+<li>{{ item }}</li>
+{% endfor %}
+</nav>
+<p>batteries</p>
+<ul>
+{% for item in batteries %}
+<li>{{ item }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
